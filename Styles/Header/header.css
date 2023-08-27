@@ -214,4 +214,11 @@ header .overlay .close {
   .nosotros-text {
     font-size: medium;
   }
+}
+#educativos {
+  display: flex;
+}
+#educativos .educativos-card {
+  background-color: var(--primary-color);
+  flex: 1;
 }/*# sourceMappingURL=header.css.map */

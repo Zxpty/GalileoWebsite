@@ -198,7 +198,6 @@ header {
             padding: 1rem;
             font-weight: 500;
             flex: 1;
-
         }
         .nosotros-logo {
             background-color: var(--secondary-color);
@@ -228,13 +227,21 @@ header {
         }
     }
 }
-.nosotros-text{
+.nosotros-text {
     font-size: 34px;
 }
 @media (max-width: 768px) {
     .nosotros-text {
         font-size: medium;
     }
-
 }
+// section 3 - cards
 
+#educativos {
+    display: flex;
+    .educativos-card {
+        background-color: var(--primary-color);
+        flex: 1;
+        
+    }
+}
