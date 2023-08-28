@@ -2,6 +2,7 @@
     --primary-color: #f34506;
     --secondary-color: #17293d;
 }
+
 header {
     position: fixed;
     top: 0;
@@ -21,25 +22,31 @@ header {
         justify-content: center;
         align-items: center;
     }
+
     /* Logo Nav*/
     .menu-logo {
         gap: 1rem;
         color: white;
         line-height: 1.8rem;
+
         .logo-title {
             font-size: 34px;
             font-weight: bold;
         }
+
         .logo-subtitle {
             font-weight: bold;
         }
     }
+
     /* links of Nav*/
     .nav-links {
         gap: 1rem;
+
         a {
             position: relative;
         }
+
         li a {
             color: white;
             font-size: 24px;
@@ -89,27 +96,33 @@ header {
         }
     }
 }
+
 .menu {
     display: none;
 }
+
 .background-scroll {
     background-color: #17293d;
     padding: 0.7rem;
     transition: all 0.2s ease-in-out 0;
 }
+
 /* Media Query Nav */
 @media screen and (max-width: 800px) {
     header {
         padding: 1rem 1rem;
     }
-    .menu-logo > div {
+
+    .menu-logo>div {
         display: none;
     }
+
     nav {
         .nav-links {
             display: none;
         }
     }
+
     .menu {
         display: inherit;
     }
@@ -130,6 +143,7 @@ header {
         }
     }
 }
+
 /*End of media query Nav*/
 
 // section 1
@@ -148,6 +162,7 @@ header {
             font-weight: 500;
             text-transform: capitalize;
         }
+
         div:nth-child(4) {
             font-size: 28px;
         }
@@ -164,6 +179,7 @@ header {
         }
     }
 }
+
 // section 2
 #space {
     display: flex;
@@ -176,14 +192,17 @@ header {
         padding: 5rem 0;
         font-size: 3rem;
         font-weight: bold;
+
         div:nth-child(1) {
             color: var(--secondary-color);
         }
+
         div:nth-child(2) {
             color: var(--primary-color);
         }
     }
 }
+
 // section 3
 
 #nosotros {
@@ -199,6 +218,7 @@ header {
             font-weight: 500;
             flex: 1;
         }
+
         .nosotros-logo {
             background-color: var(--secondary-color);
             flex: 1;
@@ -208,12 +228,14 @@ header {
             align-items: center;
             padding: 11rem 0;
             line-height: 3rem;
+
             .title {
                 color: white;
                 font-weight: bold;
                 font-size: 34px;
                 text-align: center;
             }
+
             button {
                 background-color: var(--primary-color);
                 border: none;
@@ -227,16 +249,104 @@ header {
         }
     }
 }
+
 .nosotros-text {
     font-size: 34px;
 }
+
 @media (max-width: 768px) {
     .nosotros-text {
         font-size: medium;
     }
 }
+
 // section 3 - cards
 
-#educativos{
-    
+.container-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url(/Images/Background/background2.png);
+    background-size: cover;
+    /* Ajusta la imagen para cubrir todo el espacio sin repetirse */
+    background-repeat: no-repeat;
+    /* Evita la repetición de la imagen */
+    background-position: center center;
+
+
+    .card {
+        background-color: #f34506;
+        width: 284px;
+        height: 425px;
+        margin: 62px 55px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        h2 {
+            text-align: center;
+            color: white;
+        }
+    }
+
+    .card-image {
+        height: 350px;
+        margin-bottom: 15px;
+        background-size: cover;
+        border-radius: 20px;
+    }
+
+    .edu-1 {
+        background-image: url(/Images/Rectangle\ 25.png);
+    }
+
+    .edu-2 {
+        background-image: url(/Images/Rectangle\ 25.png);
+    }
+
+    .edu-3 {
+        background-image: url(/Images/Rectangle\ 25.png);
+    }
+
+    .edu-4 {
+        background-image: url(/Images/Rectangle\ 25.png);
+    }
+}
+
+.card:hover {
+    transform: scale(1.1);
+    border: 1px solid rgba(255, 255, 255, 0.255);
+    filter: drop-shadow(0 15px 5px rgba(136, 73, 2, 0.125));
+    opacity: 0.9;
+}
+
+//section 4 - form
+
+#formulario {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    line-height: 8rem;
+    margin: 1rem 0;
+
+    input {
+        padding: 1rem 1rem;
+        font-size: 28px;
+        border-radius: 30px;
+        border: 1px solid var(--secondary-color);
+    }
+
+}
+
+.form-button {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 0.7rem 7rem;
+    border-radius: 30px;
+    font-size: 20px;
+    color: white;
+    margin-top: 1rem;
+    cursor: pointer;
 }

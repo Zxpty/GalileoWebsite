@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 :root {
   --primary-color: #f34506;
   --secondary-color: #17293d;
@@ -17,6 +19,7 @@ header {
   /* Logo Nav*/
   /* links of Nav*/
 }
+
 header .menu-logo,
 header nav,
 header ul {
@@ -24,29 +27,36 @@ header ul {
   justify-content: center;
   align-items: center;
 }
+
 header .menu-logo {
   gap: 1rem;
   color: white;
   line-height: 1.8rem;
 }
+
 header .menu-logo .logo-title {
   font-size: 34px;
   font-weight: bold;
 }
+
 header .menu-logo .logo-subtitle {
   font-weight: bold;
 }
+
 header .nav-links {
   gap: 1rem;
 }
+
 header .nav-links a {
   position: relative;
 }
+
 header .nav-links li a {
   color: white;
   font-size: 24px;
   font-weight: bold;
 }
+
 header .overlay {
   height: 100%;
   width: 0;
@@ -58,6 +68,7 @@ header .overlay {
   overflow: hidden;
   transition: all 0.3s ease 0;
 }
+
 header .overlay .overlay-content {
   display: flex;
   height: 100%;
@@ -65,6 +76,7 @@ header .overlay .overlay-content {
   align-items: center;
   justify-content: center;
 }
+
 header .overlay a {
   padding: 15px;
   font-size: 36px;
@@ -73,10 +85,12 @@ header .overlay a {
   font-weight: 700;
   color: rgb(255, 255, 255);
 }
+
 header .overlay a:hover,
 header .overlay a:focus {
   color: var(--primary-color);
 }
+
 header .overlay .close {
   position: absolute;
   top: 20px;
@@ -99,26 +113,32 @@ header .overlay .close {
   header {
     padding: 1rem 1rem;
   }
-  .menu-logo > div {
+
+  .menu-logo>div {
     display: none;
   }
+
   nav .nav-links {
     display: none;
   }
+
   .menu {
     display: inherit;
   }
 }
+
 @media screen and (max-height: 450px) {
   header .overlay a {
     font-size: 20px;
   }
+
   header .overlay .close {
     font-size: 40px;
     top: 15px;
     right: 35px;
   }
 }
+
 /*End of media query Nav*/
 #hero {
   background: url("/Images/Background/background1.png");
@@ -127,6 +147,7 @@ header .overlay .close {
   position: relative;
   z-index: 1;
 }
+
 #hero .hero div {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
   color: white;
@@ -134,9 +155,11 @@ header .overlay .close {
   font-weight: 500;
   text-transform: capitalize;
 }
+
 #hero .hero div:nth-child(4) {
   font-size: 28px;
 }
+
 #hero .hero button {
   background-color: var(--primary-color);
   border: none;
@@ -155,14 +178,17 @@ header .overlay .close {
   flex-direction: column;
   text-align: center;
 }
+
 #space .space {
   padding: 5rem 0;
   font-size: 3rem;
   font-weight: bold;
 }
+
 #space .space div:nth-child(1) {
   color: var(--secondary-color);
 }
+
 #space .space div:nth-child(2) {
   color: var(--primary-color);
 }
@@ -170,6 +196,7 @@ header .overlay .close {
 #nosotros .nosotros {
   display: flex;
 }
+
 #nosotros .nosotros .nosotros-text {
   background-color: #f0f0f0;
   display: flex;
@@ -179,6 +206,7 @@ header .overlay .close {
   font-weight: 500;
   flex: 1;
 }
+
 #nosotros .nosotros .nosotros-logo {
   background-color: var(--secondary-color);
   flex: 1;
@@ -189,12 +217,14 @@ header .overlay .close {
   padding: 11rem 0;
   line-height: 3rem;
 }
+
 #nosotros .nosotros .nosotros-logo .title {
   color: white;
   font-weight: bold;
   font-size: 34px;
   text-align: center;
 }
+
 #nosotros .nosotros .nosotros-logo button {
   background-color: var(--primary-color);
   border: none;
@@ -214,4 +244,91 @@ header .overlay .close {
   .nosotros-text {
     font-size: medium;
   }
-}/*# sourceMappingURL=header.css.map */
+}
+
+.container-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-image: url(/Images/Background/background2.png);
+  background-size: cover;
+  /* Ajusta la imagen para cubrir todo el espacio sin repetirse */
+  background-repeat: no-repeat;
+  /* Evita la repetición de la imagen */
+  background-position: center center;
+}
+
+.container-card .card {
+  background-color: #f34506;
+  width: 284px;
+  height: 425px;
+  margin: 62px 55px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.container-card .card h2 {
+  text-align: center;
+  color: white;
+}
+
+.container-card .card-image {
+  height: 350px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.container-card .edu-1 {
+  background-image: url(/Images/Rectangle\ 25.png);
+}
+
+.container-card .edu-2 {
+  background-image: url(/Images/Rectangle\ 25.png);
+}
+
+.container-card .edu-3 {
+  background-image: url(/Images/Rectangle\ 25.png);
+}
+
+.container-card .edu-4 {
+  background-image: url(/Images/Rectangle\ 25.png);
+}
+
+.card:hover {
+  transform: scale(1.1);
+  border: 1px solid rgba(255, 255, 255, 0.255);
+  filter: drop-shadow(0 15px 5px rgba(136, 73, 2, 0.125));
+  opacity: 0.9;
+}
+
+#formulario {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  line-height: 8rem;
+  margin: 1rem 0;
+}
+
+#formulario input {
+  padding: 1rem 1rem;
+  font-size: 28px;
+  border-radius: 30px;
+  border: 1px solid var(--secondary-color);
+}
+
+.form-button {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 0.7rem 7rem;
+  border-radius: 30px;
+  font-size: 20px;
+  color: white;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=header.css.map */
