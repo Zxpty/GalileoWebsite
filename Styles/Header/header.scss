@@ -113,7 +113,7 @@ header {
         padding: 1rem 1rem;
     }
 
-    .menu-logo>div {
+    .menu-logo > div {
         display: none;
     }
 
@@ -234,12 +234,13 @@ header {
                 font-weight: bold;
                 font-size: 34px;
                 text-align: center;
+                text-transform: capitalize;
             }
 
             button {
                 background-color: var(--primary-color);
                 border: none;
-                padding: 0.5rem 2rem;
+                padding: 0.5rem 1rem;
                 border-radius: 30px;
                 font-size: 20px;
                 color: white;
@@ -272,7 +273,6 @@ header {
     background-repeat: no-repeat;
     /* Evita la repetición de la imagen */
     background-position: center center;
-
 
     .card {
         background-color: #f34506;
@@ -333,11 +333,10 @@ header {
 
     input {
         padding: 1rem 1rem;
-        font-size: 28px;
+        font-size: 1rem;
         border-radius: 30px;
         border: 1px solid var(--secondary-color);
     }
-
 }
 
 .form-button {
@@ -349,4 +348,63 @@ header {
     color: white;
     margin-top: 1rem;
     cursor: pointer;
+}
+
+// Footer
+
+#footer {
+    border: 1px solid green;
+    color: white;
+    background-image: url(/Images/Background/background3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    .footer {
+        padding: 5rem;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+.footer-container {
+    .container-flex {
+        // border: solid 1px red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 4rem;
+        font-size: 26px;
+        text-transform: capitalize;
+        div {
+            width: 100%;
+        }
+        .title{
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .logo {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            line-height: normal;
+            img {
+                width: 109px;
+                height: 109px;
+            }
+            .title {
+                font-size: 34px;
+                font-weight: bold;
+            }
+            .subtitle {
+                font-size: 17px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .container-flex {
+        text-align: center;
+    }
 }

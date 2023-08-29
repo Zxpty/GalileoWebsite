@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 :root {
   --primary-color: #f34506;
   --secondary-color: #17293d;
@@ -19,7 +18,6 @@ header {
   /* Logo Nav*/
   /* links of Nav*/
 }
-
 header .menu-logo,
 header nav,
 header ul {
@@ -27,36 +25,29 @@ header ul {
   justify-content: center;
   align-items: center;
 }
-
 header .menu-logo {
   gap: 1rem;
   color: white;
   line-height: 1.8rem;
 }
-
 header .menu-logo .logo-title {
   font-size: 34px;
   font-weight: bold;
 }
-
 header .menu-logo .logo-subtitle {
   font-weight: bold;
 }
-
 header .nav-links {
   gap: 1rem;
 }
-
 header .nav-links a {
   position: relative;
 }
-
 header .nav-links li a {
   color: white;
   font-size: 24px;
   font-weight: bold;
 }
-
 header .overlay {
   height: 100%;
   width: 0;
@@ -68,7 +59,6 @@ header .overlay {
   overflow: hidden;
   transition: all 0.3s ease 0;
 }
-
 header .overlay .overlay-content {
   display: flex;
   height: 100%;
@@ -76,7 +66,6 @@ header .overlay .overlay-content {
   align-items: center;
   justify-content: center;
 }
-
 header .overlay a {
   padding: 15px;
   font-size: 36px;
@@ -85,12 +74,10 @@ header .overlay a {
   font-weight: 700;
   color: rgb(255, 255, 255);
 }
-
 header .overlay a:hover,
 header .overlay a:focus {
   color: var(--primary-color);
 }
-
 header .overlay .close {
   position: absolute;
   top: 20px;
@@ -113,32 +100,26 @@ header .overlay .close {
   header {
     padding: 1rem 1rem;
   }
-
-  .menu-logo>div {
+  .menu-logo > div {
     display: none;
   }
-
   nav .nav-links {
     display: none;
   }
-
   .menu {
     display: inherit;
   }
 }
-
 @media screen and (max-height: 450px) {
   header .overlay a {
     font-size: 20px;
   }
-
   header .overlay .close {
     font-size: 40px;
     top: 15px;
     right: 35px;
   }
 }
-
 /*End of media query Nav*/
 #hero {
   background: url("/Images/Background/background1.png");
@@ -147,7 +128,6 @@ header .overlay .close {
   position: relative;
   z-index: 1;
 }
-
 #hero .hero div {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
   color: white;
@@ -155,11 +135,9 @@ header .overlay .close {
   font-weight: 500;
   text-transform: capitalize;
 }
-
 #hero .hero div:nth-child(4) {
   font-size: 28px;
 }
-
 #hero .hero button {
   background-color: var(--primary-color);
   border: none;
@@ -178,17 +156,14 @@ header .overlay .close {
   flex-direction: column;
   text-align: center;
 }
-
 #space .space {
   padding: 5rem 0;
   font-size: 3rem;
   font-weight: bold;
 }
-
 #space .space div:nth-child(1) {
   color: var(--secondary-color);
 }
-
 #space .space div:nth-child(2) {
   color: var(--primary-color);
 }
@@ -196,7 +171,6 @@ header .overlay .close {
 #nosotros .nosotros {
   display: flex;
 }
-
 #nosotros .nosotros .nosotros-text {
   background-color: #f0f0f0;
   display: flex;
@@ -206,7 +180,6 @@ header .overlay .close {
   font-weight: 500;
   flex: 1;
 }
-
 #nosotros .nosotros .nosotros-logo {
   background-color: var(--secondary-color);
   flex: 1;
@@ -217,18 +190,17 @@ header .overlay .close {
   padding: 11rem 0;
   line-height: 3rem;
 }
-
 #nosotros .nosotros .nosotros-logo .title {
   color: white;
   font-weight: bold;
   font-size: 34px;
   text-align: center;
+  text-transform: capitalize;
 }
-
 #nosotros .nosotros .nosotros-logo button {
   background-color: var(--primary-color);
   border: none;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   border-radius: 30px;
   font-size: 20px;
   color: white;
@@ -245,7 +217,6 @@ header .overlay .close {
     font-size: medium;
   }
 }
-
 .container-card {
   display: flex;
   justify-content: center;
@@ -257,7 +228,6 @@ header .overlay .close {
   /* Evita la repetición de la imagen */
   background-position: center center;
 }
-
 .container-card .card {
   background-color: #f34506;
   width: 284px;
@@ -267,31 +237,25 @@ header .overlay .close {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
 .container-card .card h2 {
   text-align: center;
   color: white;
 }
-
 .container-card .card-image {
   height: 350px;
   margin-bottom: 15px;
   background-size: cover;
   border-radius: 20px;
 }
-
 .container-card .edu-1 {
   background-image: url(/Images/Rectangle\ 25.png);
 }
-
 .container-card .edu-2 {
   background-image: url(/Images/Rectangle\ 25.png);
 }
-
 .container-card .edu-3 {
   background-image: url(/Images/Rectangle\ 25.png);
 }
-
 .container-card .edu-4 {
   background-image: url(/Images/Rectangle\ 25.png);
 }
@@ -312,10 +276,9 @@ header .overlay .close {
   line-height: 8rem;
   margin: 1rem 0;
 }
-
 #formulario input {
   padding: 1rem 1rem;
-  font-size: 28px;
+  font-size: 1rem;
   border-radius: 30px;
   border: 1px solid var(--secondary-color);
 }
@@ -331,4 +294,57 @@ header .overlay .close {
   cursor: pointer;
 }
 
-/*# sourceMappingURL=header.css.map */
+#footer {
+  border: 1px solid green;
+  color: white;
+  background-image: url(/Images/Background/background3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#footer .footer {
+  padding: 5rem;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.footer-container .container-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 4rem;
+  font-size: 26px;
+  text-transform: capitalize;
+}
+.footer-container .container-flex div {
+  width: 100%;
+}
+.footer-container .container-flex .title {
+  font-size: 28px;
+  font-weight: bold;
+}
+.footer-container .container-flex .logo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: normal;
+}
+.footer-container .container-flex .logo img {
+  width: 109px;
+  height: 109px;
+}
+.footer-container .container-flex .logo .title {
+  font-size: 34px;
+  font-weight: bold;
+}
+.footer-container .container-flex .logo .subtitle {
+  font-size: 17px;
+}
+
+@media screen and (max-width: 768px) {
+  .container-flex {
+    text-align: center;
+  }
+}/*# sourceMappingURL=header.css.map */
